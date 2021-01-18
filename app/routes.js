@@ -3,7 +3,7 @@ let router = express.Router()
 let axios = require("axios")
 
 router.get("/", function(req, resp) {
-    let url = "https://api.1up.health/fhir/dstu2/Patient/testpatient2/$everything"
+    let url = process.env.EVERYTHING_URL
     let access_token = process.env.ACCESS_TOKEN
 
     axios
@@ -20,7 +20,6 @@ router.get("/", function(req, resp) {
         .catch(function(error) {
             console.error(error.response)
         })
-    console.log(process.env.ACCESS_TOKEN)
 })
 
 module.exports = router

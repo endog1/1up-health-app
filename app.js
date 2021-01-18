@@ -1,7 +1,7 @@
 require('dotenv').config()
 let express = require("express")
 let path = require("path")
-let routes = require("./routes")
+let routes = require("./app/routes")
 
 let app = express()
 
