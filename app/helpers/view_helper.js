@@ -10,11 +10,6 @@ class ViewHelper {
         }
         return html
     }
-
-    static renderJsonList(jsonObj) {
-        let list = this.renderListHTML(jsonObj)
-        return list
-    }
 }
 
 module.exports = exports = ViewHelper

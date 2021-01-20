@@ -4,8 +4,8 @@
   "description": "Web application that displays patient data from 1up health API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app"
+    "test": "mocha",
+    "start": "node app"
   },
   "author": "endakiernan",
   "license": "ISC",
@@ -16,5 +16,8 @@
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1"
   }
 }

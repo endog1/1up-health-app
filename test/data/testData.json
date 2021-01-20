@@ -1,0 +1,23 @@
+{
+  "testJsonObj": {
+    "statusOk": true,
+    "data": [
+      {
+        "fullUrl": "https://api.1up.health/dstu2/Patient/testpatient2",
+        "search": {
+          "mode":"match"
+        },
+        "resource": {
+          "gender": "male",
+          "meta": {
+            "lastUpdated": "2021-01-16T04:52:17.786Z",
+            "versionId": "9000000000000"
+          },
+          "id": "testpatient2",
+          "resourceType": "Patient"
+        }
+      }
+    ]
+  },
+  "testHtmlList": "<li><b>statusOk:</b> true</li><li><b>data:</b><ul><li><b>0:</b><ul><li><b>fullUrl:</b> https://api.1up.health/dstu2/Patient/testpatient2</li><li><b>search:</b><ul><li><b>mode:</b> match</li></ul></li><li><b>resource:</b><ul><li><b>gender:</b> male</li><li><b>meta:</b><ul><li><b>lastUpdated:</b> 2021-01-16T04:52:17.786Z</li><li><b>versionId:</b> 9000000000000</li></ul></li><li><b>id:</b> testpatient2</li><li><b>resourceType:</b> Patient</li></ul></li></ul></li></ul></li>"
+}
