@@ -1,7 +1,7 @@
 let express = require("express")
 let router = express.Router()
 let api = require("../app/helpers/api")
-let viewHelper = require("../app/helpers/view_helper")
+let viewHelper = require("./helpers/viewHelper")
 
 router.get("/", async function(req, resp) {
     resp.render("index")
@@ -10,7 +10,6 @@ router.get("/", async function(req, resp) {
 router.get('/patient', async function (req, res) {
     try {
         let data = await api.everythingQuery(req.query)
-        console.log(JSON.stringify(data))
         let htmlList = await viewHelper.renderListHTML(data.data)
         res.render("index", { table: htmlList })
     } catch (error) {

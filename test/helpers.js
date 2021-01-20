@@ -1,5 +1,5 @@
 const assert = require('assert')
-let viewHelper = require("../app/helpers/view_helper")
+let viewHelper = require("../app/helpers/viewHelper")
 let data = require("./data/testData")
 
 describe('renderListHTML()', function() {
