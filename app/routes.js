@@ -10,11 +10,12 @@ router.get("/", async function(req, resp) {
 router.get('/patient', async function (req, res) {
     try {
         let data = await api.everything(req.query)
-        let htmlTable = await viewHelper.renderJsonList(data)
-        res.render("index", { table: htmlTable })
-    } catch (e) {
-        res.render("index", {table: e})
+        let htmlList = await viewHelper.renderJsonList(data.data)
+        res.render("index", { table: htmlList })
+    } catch (error) {
+        console.log(error)
+        res.render("index", {table: error})
     }
 })
 
-module.exports = router
+module.exports = exports = router

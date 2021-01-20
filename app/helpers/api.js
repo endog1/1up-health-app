@@ -16,12 +16,12 @@ class apis {
                 data: res.data.entry
             }
             return renderData
-        } catch (e) {
+        } catch (error) {
             let renderData = {
                 statusOk: false,
-                error: e.response.status,
-                errorDescription: e.response.statusText,
-                data: {Error: `${e.response.status} ${e.response.statusText}`}
+                error: error.response.status,
+                errorDescription: error.response.statusText,
+                data: {Error: `${error.response.status} ${error.response.statusText}`}
             }
             return renderData
         }
