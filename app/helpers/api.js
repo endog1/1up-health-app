@@ -1,7 +1,7 @@
 let axios = require("axios")
 
 class apis {
-    static async everything(query) {
+    static async everythingQuery(query) {
         let url = `${process.env.API_URL_1UP_HEALTH}/fhir/${query.type}/Patient/${query.id}/$everything`
         let access_token = process.env.ACCESS_TOKEN
         try {

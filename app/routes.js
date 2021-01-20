@@ -9,7 +9,7 @@ router.get("/", async function(req, resp) {
 
 router.get('/patient', async function (req, res) {
     try {
-        let data = await api.everything(req.query)
+        let data = await api.everythingQuery(req.query)
         console.log(JSON.stringify(data))
         let htmlList = await viewHelper.renderListHTML(data.data)
         res.render("index", { table: htmlList })

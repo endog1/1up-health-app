@@ -20,3 +20,8 @@ npm install
 npm start
 ```
 Open your browser and go to http://localhost:8000/
+
+# Testing
+```$xslt
+npm test
+```
